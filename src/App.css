@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: flex;
+  touch-action: none;
+  width: 1000px;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  width: 150px;
+  height: 30px;
+  margin: 20px;
+  text-align: center;
+  cursor: url("assets/Vector.png") 2 2, move;
+}
+
+.dropArea {
+  color: white !important;
+  background: white !important;
+  position: relative;
+}
+
+.card.over {
+  border: 3px dotted #666;
+  background-color: lightblue;
+}
+.being-dragged {
+  color: green;
+  opacity: 0.45;
+}
